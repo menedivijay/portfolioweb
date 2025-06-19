@@ -16,6 +16,10 @@ body {
 background-color: #121212;
 color: #ffffff;
 }
+.bg-color{
+    background: #020024;
+background: linear-gradient(134deg, rgba(2, 0, 36, 1) 0%, rgba(10, 56, 56, 1) 40%, rgba(0, 101, 242, 1) 100%);
+}
 .shape-blob {
 border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
 animation: transform 20s ease-in-out infinite;
@@ -41,37 +45,36 @@ outline: none;
 </head>
 <body">
 <!-- Navigation -->
-<nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 backdrop-blur-sm">
-<div class="container mx-auto px-6 py-4 flex justify-between items-center">
-<div class="text-3xl font-['Pacifico'] text-primary">VK</div>
-<div class="hidden md:flex space-x-8">
-<a href="#homepage" class="text-white hover:text-primary transition-colors">Home</a>
-<a href="#skills" class="text-white hover:text-primary transition-colors">Skills</a>
-<a href="#projects" class="text-white hover:text-primary transition-colors">Projects</a>
-<a href="#Achievements" class="text-white hover:text-primary transition-colors">Achievements</a>
-<a href="#contact" class="text-white hover:text-primary transition-colors">Contact</a>
-</div>
-<div class="md:hidden w-8 h-8 flex items-center justify-center">
-<i class="ri-menu-line ri-2x text-white"></i>
-</div>
-</div>
-</nav>
+  <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 backdrop-blur-sm bg-color">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+          <div class="text-3xl font-['Pacifico'] text-primary">VK</div>
+              <div class="hidden md:flex space-x-8">
+                 <a href="#homepage" class="text-white hover:text-primary transition-colors">Home</a>
+                 <a href="#skills" class="text-white hover:text-primary transition-colors ">Skills</a>
+                 <a href="#projects" class="text-white hover:text-primary transition-colors ">Projects</a>
+                 <a href="#Achievements" class="text-white hover:text-primary transition-colors">Achievements</a>
+                 <a href="#contact" class="text-white hover:text-primary transition-colors">Contact</a>
+              </div>
+             <div class="md:hidden w-8 h-8 flex items-center justify-center">
+             <i class="ri-menu-line ri-2x text-white"></i>
+          </div>
+      </div>
+  </nav>
 
-    <main class="gradient-bg">
-        <section id="homepage" class="w-full min-h-[90vh] flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-12 relative">
+    <main class="bg-color">
+        <section id="homepage" class="w-full min-h-[100vh] flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-12 relative">
             <div class="w-full md:w-1/2 z-10">
                 <p class="text-primary text-2xl md:text-2xl font-bold mb-2"><br>Welcome to my portfolio!</p>
                 <h2 class="text-5xl md:text-5xl font-bold mb-3">Hello, I am <br><span class="text-primary">Menedi Vijay Kumar</span></h2>
-                <p class="text-lg text-gray-300 mb-6">I'm a UI/UX designer from San Francisco. Currently working with <span class="text-primary">@Designo</span> as a Senior Product Designer.</p>
+                <p class="text-lg text-gray-300 mb-6">I'm a passionate <span class="text-primary">Java Full Stack Developer</span> and <span class="text-primary">AWS DevOps Engineer</span> With hands-on experience in designing, developing, and deploying scalable web applications and cloud-native solutions</p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 mt-8">
-                    <button class="bg-primary hover:bg-blue-600 text-white py-3 px-8 rounded-button transition-colors whitespace-nowrap">
-                        Download CV
-                    </button>
-                    <button class="border border-white hover:border-primary text-white hover:text-primary py-3 px-8 rounded-button flex items-center justify-center gap-2 transition-colors whitespace-nowrap">
-                        See my work
+                    <a target="_blank" href="https://drive.google.com/file/d/1SRItCcJvZl36uPikpQ7OMUlSGVl0fPc_/view?usp=sharing" class="bg-primary hover:bg-green-600 text-white py-3 px-8 rounded-button transition-colors whitespace-nowrap">
+                        Download CV</a>
+                    <a href="#projects"><button class="border border-white hover:border-primary text-white hover:text-primary py-3 px-8 rounded-button flex items-center justify-center gap-2 transition-colors whitespace-nowrap">
+                        My Projects
                         <i class="ri-arrow-right-line"></i>
-                    </button>
+                    </button></a>
                 </div>
             </div>
             
@@ -80,7 +83,7 @@ outline: none;
                     <!--<img src="https://readdy.ai/api/search-image?query=3D%20blue%20triangle%20geometric%20shape%20with%20glossy%20finish%2C%20minimalist%20design%2C%20floating%20in%20space%2C%20professional%20portfolio%20element%2C%20tech%20aesthetic%2C%20digital%20art&width=200&height=200&seq=1&orientation=squarish" alt="Decorative triangle" class="w-full h-full object-contain">
                 --></div>
                 
-                <div class="relative w-[300px] h-[400px] md:w-[400px] md:h-[500px] rounded-[200px] overflow-hidden border-4 border-blue-400 flex items-center justify-center">
+                <div class="relative w-[300px] h-[400px] md:w-[400px] md:h-[500px] rounded-[200px] overflow-hidden border-4 border-white-900 flex items-center justify-center">
                     <img src="images/mypic.jpg" alt="Alex Morgan" class="w-full h-full object-cover">
                 </div>
                 
@@ -104,47 +107,80 @@ outline: none;
 With years of experience in design and development, I've mastered various tools and technologies to deliver exceptional results.
 </p>
 </div>
-<div class="grid grid-cols-3 gap-4">
+<div class="grid grid-cols-3 gap-6">
     <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
         <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
             <img src="icons/java.png"/>
         </div>
         <h4 class="font-bold text-xl mb-2">Java 24</h4>
-        <p class="text-gray-400">advance</p>
+        <p class="text-gray-400"></p>
     </div>
     <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
         <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
             <img src="icons/c-sharp.png" alt="">
        </div>
-        <h4 class="font-bold text-xl mb-2">C#</h4>
-        <p class="text-gray-400">Basic</p>
+        <h4 class="font-bold text-xl mb-2">Javascript</h4>
+        <p class="text-gray-400"></p>
    </div>
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
+      <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+        <img src="icons/mysql.png" alt="">
+    </div>
+        <h4 class="font-bold text-xl mb-2">MySQL</h4>
+    </div>
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+            <img src="icons/science.png" alt="">
+        </div>
+        <h4 class="font-bold text-xl mb-2">React JS</h4>
+    </div>
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
+      <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+        <img src="icons/linux.png" alt="">
+    </div>
+        <h4 class="font-bold text-xl mb-2">Linux</h4>  
+    </div>
     <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
       <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
         <img src="icons/html-5.png" alt="">
     </div>
-        <h4 class="font-bold text-xl mb-2">HTML</h4>
-    </div>
-    <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
-        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
-            <i class="ri-time-line ri-2x text-primary"></i>
-        </div>
-        <h4 class="font-bold text-xl mb-2">CSS</h4>
-        <p class="text-gray-400">Years Experience</p>
+        <h4 class="font-bold text-xl mb-2">HTML5</h4> 
     </div>
     <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
       <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
-        <i class="ri-award-line ri-2x text-primary"></i>
+        <img src="icons/css-3.png" alt="">
     </div>
-        <h4 class="font-bold text-xl mb-2"></h4>
-        
+        <h4 class="font-bold text-xl mb-2">CSS3</h4> 
     </div>
     <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
       <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
-        <i class="ri-award-line ri-2x text-primary"></i>
+        <img src="icons/bootstrap.png" alt="">
     </div>
-        <h4 class="font-bold text-xl mb-2">HTML5</h4>
-        
+        <h4 class="font-bold text-xl mb-2">BootStrap5</h4> 
+    </div>
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
+      <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+        <img src="icons/tomcat.png" alt="">
+    </div>
+        <h4 class="font-bold text-xl mb-2">Tomcat10</h4> 
+    </div>
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
+      <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+        <img src="icons/social.png" alt="">
+    </div>
+        <h4 class="font-bold text-xl mb-2">AWS Services</h4> 
+    </div>
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
+      <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+        <img src="icons/github (1).png" alt="">
+    </div>
+        <h4 class="font-bold text-xl mb-2">GitHub</h4> 
+    </div>
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-gray-800 hover:border-primary transition-all text-center">
+      <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+        <img src="icons/png-clipart-apache-maven-feathers-tech-companies.png" alt="">
+    </div>
+        <h4 class="font-bold text-xl mb-2">Maven</h4> 
     </div>
 </div>
 </div>
